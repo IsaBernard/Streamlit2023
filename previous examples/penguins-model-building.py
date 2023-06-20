@@ -1,6 +1,6 @@
 import pandas as pd
 
-penguins = pd.read_csv(f'data/penguins_cleaned.csv')
+penguins = pd.read_csv(f'../data/penguins_cleaned.csv')
 
 # Ordinal feature encoding
 # https://www.kaggle.com/pratik1120/penguin-dataset-eda-classification-and-clustering
@@ -35,4 +35,4 @@ clf.fit(X, Y)
 # Saving the model
 import pickle
 
-pickle.dump(clf, open('penguins_clf.pkl', 'wb'))
+pickle.dump(clf, open('../penguins_clf.pkl', 'wb'))
